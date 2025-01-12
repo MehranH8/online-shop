@@ -1,0 +1,16 @@
+.title-banner{
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,#e0f5ff 23.5%,#0000 0)105px 150px,
+    radial-gradient(circle farthest-side at 0% 50%,#e4f8fe 24%,#0000 0)95px 150px,
+    linear-gradient(#e0f5ff 14%,#0000 0, #0000 85%,#e0f5ff 0)0 0,
+    linear-gradient(150deg,#e0f5ff 24%,#e4f8fe 0,#e4f8fe 26%,#0000 0,#0000 74%,#e4f8fe 0,#e4f8fe 76%,#e0f5ff 0)0 0,
+    linear-gradient(30deg,#e0f5ff 24%,#e4f8fe 0,#e4f8fe 26%,#0000 0,#0000 74%,#e4f8fe 0,#e4f8fe 76%,#e0f5ff 0)0 0,
+    linear-gradient(90deg,#e4f8fe 2%,#e0f5ff 0,#e0f5ff 98%,#e4f8fe 0%)0 0 #e0f5ff;
+background-size: 200px 300px;
+background-color: #e0f5ff;
+}
+
+.clothes-banner{
+    background: rgb(65,189,255);
+background: linear-gradient(81deg, rgba(65,189,255,1) 20%, rgba(62,166,221,1) 95%);
+}
