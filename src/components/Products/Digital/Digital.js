@@ -2,6 +2,7 @@ import Productcard from "../../../Ui/Productcard/Productcard"
 import { useState } from "react"
 
 
+
 const Digital =()=>{
 
 
@@ -25,9 +26,8 @@ const Digital =()=>{
     const [filter, setfilter] = useState(0)
 
 
-
     return(
-        <div className="mt-10">
+        <div  className="mt-10">
             <div className="mx-8 sm:mx-12 md:mx-16 lg:mx-12 xl:mx-14 2xl:mx-20">
                 {/*filter */}
                 <div className="grid grid-cols-2 sm:flex gap-3 sm:gap-6 mb-8 pb-4 mr-1 border-b-[1px] border-[#e0e0e2]">

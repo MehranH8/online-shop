@@ -1,9 +1,16 @@
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Checkoutcard from "../../Ui/Checkoutcard/Checkoutcard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Checkout = () => {
 
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
 
     const [checkoutcard, setcheckoutcard] = useState({
@@ -16,7 +23,8 @@ const Checkout = () => {
 
 
     return (
-        <div className="mt-10">
+        <div data-aos="fade-up"
+        data-aos-duration="800" data-aos-delay="300" data-aos-once="true" className="mt-10">
             {/*title */}
             <div className="mx-8 sm:mx-12 md:mx-16 lg:mx-12 xl:mx-14 2xl:mx-20 border-b-[1px] border-[#e0e0e2] -pb-1  mb-12">
                 <h2 className="border-b-[3px] pb-2 border-mainblue text-mainblue max-w-fit px-4">سبد خرید </h2>
@@ -50,7 +58,7 @@ const Checkout = () => {
                             </span>
                         </div>
                         <div>
-                            <button className="bg-[#519BC2] hover:bg-opacity-80 transition-all duration-300 text-white px-2 py-3 w-full rounded-lg" type="button">تایید و تکمیل سفارش</button>
+                            <button className="bg-[#519BC2] hover:bg-opacity-80 transition-all duration-300 text-white px-2 py-3 w-full rounded-lg text-[14px] sm:text-[16px]" type="button">تایید و تکمیل سفارش</button>
                         </div>
                     </div>
                     <div className="mt-3 mx-1">

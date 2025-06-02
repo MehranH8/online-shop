@@ -3,9 +3,16 @@ import { FaStar } from "react-icons/fa6";
 import { useState } from "react";
 import Productcard from "../Productcard/Productcard";
 import Comments from "../Comments/Comments";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const Productdetail = (props) => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     const data = [
         {
@@ -52,7 +59,8 @@ const Productdetail = (props) => {
         <div className="mt-10">
             <div className="mx-8 sm:mx-12 md:mx-16 lg:mx-12 xl:mx-14 2xl:mx-20 flex xl:flex-row flex-col gap-x-12">
                 {/*images */}
-                <div className="grid gap-4 xl:sticky xl:top-8 h-fit min-w-[50%] xl:w-[50%] mb-20 xl:mb-0">
+                <div data-aos="fade-left"
+        data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" className="grid gap-4 xl:sticky xl:top-8 h-fit min-w-[50%] xl:w-[50%] mb-20 xl:mb-0">
                     <div>
                         <img
                             className="h-auto w-full max-w-[800px] rounded-lg object-cover object-center md:h-[480px]"
@@ -74,7 +82,8 @@ const Productdetail = (props) => {
                     </div>
                 </div>
                 {/*images */}
-                <div className="w-full">
+                <div data-aos="fade-right"
+        data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" className="w-full">
                     <div>
                         <span className="text-[#519bc2] text-[14px]">{props.category}</span>
                         <span className="text-[#c0c2c5] mx-2">/</span>
@@ -161,7 +170,8 @@ const Productdetail = (props) => {
                     ))}
                 </div>
             </div>
-            <div className="mx-4 sm:mx-12 md:mx-16 lg:mx-12 xl:mx-14 2xl:mx-20 mt-20">
+            <div data-aos="fade-up"
+        data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" className="mx-4 sm:mx-12 md:mx-16 lg:mx-12 xl:mx-14 2xl:mx-20 mt-20">
                 <div className="flex justify-between mb-10">
                     <div>
                         <h4 className="text-[14px] sm:text-[18px] font-bold">محصولات مرتبط</h4>

@@ -76,7 +76,7 @@ const Middlenavbar = () => {
                         placeholder="جستوجو ..."
                     />
                     <button
-                        className="absolute h-[95%] top-0 left-0 flex items-center text-center rounded bg-mainblue px-3 text-white  "
+                        className="absolute h-full top-0 left-0 flex items-center text-center rounded bg-mainblue px-3 text-white  "
                         type="button"
                     >
                         <div className="">
@@ -105,27 +105,27 @@ const Middlenavbar = () => {
                         </ListItem>
                         <AccordionBody className="py-1">
                             <List className="p-0">
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         موبایل
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         هندزفری و هدفون
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         کنسول بازی
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         ساعت هوشمند
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لپ تاپ
                                     </ListItem>
@@ -135,22 +135,22 @@ const Middlenavbar = () => {
                                         تبلت
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         پرینتر
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         کامپیوتر
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         دوربین
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/digital">
+                                <Link onClick={closeDrawerRight} to="/product/digital">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         پاوربانک
                                     </ListItem>
@@ -176,52 +176,52 @@ const Middlenavbar = () => {
                         </ListItem>
                         <AccordionBody className="py-1">
                             <List className="p-0">
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لباس مردانه
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لباس زنانه
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لباس بچگانه
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         کفش مردانه
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         کفش بچگانه
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         کفش زنانه
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لباس ورزشی
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         کیف و اکسسوری
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         کت و کاپشن
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/fashion">
+                                <Link onClick={closeDrawerRight} to="/product/fashion">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لباس خواب
                                     </ListItem>
@@ -247,27 +247,27 @@ const Middlenavbar = () => {
                         </ListItem>
                         <AccordionBody className="py-1">
                             <List className="p-0">
-                                <Link to="/product/makeup">
+                                <Link onClick={closeDrawerRight} to="/product/makeup">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         مراقبت مو
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/makeup">
+                                <Link onClick={closeDrawerRight} to="/product/makeup">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         مراقبت پوست
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/makeup">
+                                <Link onClick={closeDrawerRight} to="/product/makeup">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         عطر و ادکلن
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/makeup">
+                                <Link onClick={closeDrawerRight} to="/product/makeup">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لوازم بهداشتی
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/makeup">
+                                <Link onClick={closeDrawerRight} to="/product/makeup">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لوازم برقی
                                     </ListItem>
@@ -293,32 +293,32 @@ const Middlenavbar = () => {
                         </ListItem>
                         <AccordionBody className="py-1">
                             <List className="p-0">
-                                <Link to="/product/furniture">
+                                <Link onClick={closeDrawerRight} to="/product/furniture">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         ظروف پخت و پز
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/furniture">
+                                <Link onClick={closeDrawerRight} to="/product/furniture">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لوازم آشپزی
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/furniture">
+                                <Link onClick={closeDrawerRight} to="/product/furniture">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         دکوراسیون
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/furniture">
+                                <Link onClick={closeDrawerRight} to="/product/furniture">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         لوازم بهداشتی
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/furniture">
+                                <Link onClick={closeDrawerRight} to="/product/furniture">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         شستوشو و نظافت
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/furniture">
+                                <Link onClick={closeDrawerRight} to="/product/furniture">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         ظروف آشپرخانه
                                     </ListItem>
@@ -344,42 +344,42 @@ const Middlenavbar = () => {
                         </ListItem>
                         <AccordionBody className="py-1">
                             <List className="p-0">
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         صوتی تصویری
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         یخچال فریزر
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         جارو برقی
                                     </ ListItem>
                                 </Link>
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         ماشین لباسشویی
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         ماشین ظرفشویی
                                     </ ListItem>
                                 </Link>
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         سرمایش و گرمایش
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         تصفیه آب
                                     </ListItem>
                                 </Link>
-                                <Link to="/product/appliance">
+                                <Link onClick={closeDrawerRight} to="/product/appliance">
                                     <ListItem className="hover:text-mainorange text-[14px]">
                                         اتو
                                     </ListItem>

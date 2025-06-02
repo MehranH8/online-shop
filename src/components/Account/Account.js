@@ -1,12 +1,22 @@
 import { CiSquarePlus } from "react-icons/ci";
 import { FaChevronLeft } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 
 
 const Account = () => {
+    
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
-        <div className="mt-10">
+        <div data-aos="fade-up"
+        data-aos-duration="800" data-aos-delay="300" data-aos-once="true" className="mt-10">
             {/*attention */}
             <div className="border-[1px] rounded-xl border-[#e0e0e2] mx-8 sm:mx-12 md:mx-16 lg:mx-12 xl:mx-14 2xl:mx-20 px-8 py-3 mb-8 flex items-center gap-y-2 flex-col lg:flex-row lg:justify-between">
                 <div className="my-auto">

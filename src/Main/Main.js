@@ -17,6 +17,7 @@ import Furniture from "../components/Products/Furniture/Furniture"
 import Furnituredetail from "../components/Products/Furniture/Furnituredetail/Furnituredetail"
 import Homeelectric from "../components/Products/Homeelectric/Homeelectric"
 import Homeelectricdetail from "../components/Products/Homeelectric/Homeelectricdetail/Homeelectricdetail"
+import Page404 from "../Ui/Page404/Page404"
 
 
 const Main = () => {
@@ -26,7 +27,7 @@ const Main = () => {
             <Middlenavbar />
             <Bottomnavbar />
             <Routes>
-                <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Home/>}/>
                 <Route path="/checkout" element={<Checkout/>}/>
                 <Route path="/liked" element={<Likedproduct/>}/>
                 <Route path="/account" element={<Account/>}/>
@@ -40,6 +41,7 @@ const Main = () => {
                 <Route path="/product/fashion/detail/:id" element={<Fashiondetail/>}/>
                 <Route path="/product/makeup/detail/:id" element={<Makeupdetail/>}/>
                 <Route path="/product/digital/detail/:id" element={<Digitaldetail />}/>
+                <Route path="*" element={<Page404 />}/>
             </Routes>
             <Footer />
         </div>
